@@ -1,158 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="146.03">
-<testcase classname="Shopping Cart | Logged user could add different products to Shopping cart" name="Logged user could add different products to Shopping cart" time="11.339">
-<system-out><![CDATA[Given user go to login page.................................................passed
-When user enter an existing email...........................................passed
-And user enter an valid password............................................passed
-And user clicks on login button.............................................passed
-And user hover "Computers" category.........................................passed
-And user click on sub-category..............................................passed
-And user clicks on "Add To Cart" button2....................................passed
-And user clicks on "Add To Cart" button1....................................passed
-Then add to cart message is displayed.......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Categories | Logged user could select different Categories" name="Logged user could select different Categories &amp; Sub-categories" time="8.278">
-<system-out><![CDATA[Given user go to login page.................................................passed
-When user enter an existing email...........................................passed
-And user enter an valid password............................................passed
-And user clicks on login button.............................................passed
-And user hover "Computers" category.........................................passed
-And user click on sub-category..............................................passed
-Then page of sub-category name shows up.....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Compare List | Logged user could add different products to compare list" name="Logged user could add different products to compare list" time="9.301">
-<system-out><![CDATA[Given user go to login page.................................................passed
-When user enter an existing email...........................................passed
-And user enter an valid password............................................passed
-And user clicks on login button.............................................passed
-And user hover "Computers" category.........................................passed
-And user click on sub-category..............................................passed
-And user clicks on compare list 1...........................................passed
-And user clicks on compare list 2...........................................passed
-Then compare message is displayed...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Create Order | Create successful Order" name="Create successful Order" time="30.163">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#BillingNewAddress_CountryId&quot;}&#10;  (Session info: MicrosoftEdge=108.0.1462.46)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [ae998a53aed884fc26eabd7a3f18bc98, findElement {using=id, value=BillingNewAddress_CountryId}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59218}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59218/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ae998a53aed884fc26eabd7a3f18bc98" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user go to login page.................................................passed
-When user enter an existing email...........................................passed
-And user enter an valid password............................................passed
-And user clicks on login button.............................................passed
-And user hover "Computers" category.........................................passed
-And user click on sub-category..............................................passed
-And user clicks on "Add To Cart" button2....................................passed
-And user clicks on "Add To Cart" button1....................................passed
-And user hover "Shopping cart"..............................................passed
-And user clicks on "Go To Cart" button......................................passed
-And user check to agree the terms of service................................passed
-And user clicks on "Checkout" button........................................passed
-And user select the country.................................................failed
-And user enter the city.....................................................skipped
-And user enter the address1.................................................skipped
-And user enter zip..........................................................skipped
-And user enter phone number.................................................skipped
-And user clicks on "Continue" to shipping method............................skipped
-And user clicks on "Next Day Air"...........................................skipped
-And user clicks on "Continue" to payment method.............................skipped
-And user clicks on "Credit Card" option.....................................skipped
-And user clicks on "Continue" to payment info...............................skipped
-And user select credit card type............................................skipped
-And user enter cardholder name..............................................skipped
-And user enter card number..................................................skipped
-And user enter expiration month.............................................skipped
-And user enter expiration year..............................................skipped
-And user enter card code....................................................skipped
-And user clicks on "Continue" to confirm order..............................skipped
-And user clicks on "confirm" to final confirm order.........................skipped
-Then Your order has been successfully processed!............................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ae998a53aed884fc26eabd7a3f18bc98, findElement {using=id, value=BillingNewAddress_CountryId}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59218}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59218/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae998a53aed884fc26eabd7a3f18bc98
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.example.pages.LocatorCreateOrder.country(LocatorCreateOrder.java:27)
-	at org.example.dfs.CreateOrder.slctCountry(CreateOrder.java:42)
-	at ✽.user select the country(file:///D:/NopCommerce/src/main/resources/Features/CreateOrder.feature:17)
-]]></failure>
-</testcase>
-<testcase classname="Filter | Logged user could filter with color" name="Logged user could filter with color" time="12.759">
-<system-out><![CDATA[Given user go to login page.................................................passed
-When user enter an existing email...........................................passed
-And user enter an valid password............................................passed
-And user clicks on login button.............................................passed
-And user hover "Apparel" category...........................................passed
-And user click on sub-category "Shoes"......................................passed
-And user click on "Red" filter..............................................passed
-Then only Red shoes shows up................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login | User could log in with valid email and password" name="User could log in with valid email and password successfully" time="18.275">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-logout&quot;}&#10;  (Session info: MicrosoftEdge=108.0.1462.46)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [af3e3cb2ef491a72f76f09465030d8a1, findElement {using=class name, value=ico-logout}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59341}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: af3e3cb2ef491a72f76f09465030d8a1" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user go to login page.................................................passed
-When user enter an existing email...........................................passed
-And user enter an valid password............................................passed
-And user clicks on login button.............................................passed
-Then user login to the system successfully..................................failed
-
-StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ico\-logout"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [af3e3cb2ef491a72f76f09465030d8a1, findElement {using=class name, value=ico-logout}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59341}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: af3e3cb2ef491a72f76f09465030d8a1
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.example.pages.LocatorLogin.logSuc(LocatorLogin.java:30)
-	at org.example.dfs.Login.loginSuccessfully(Login.java:36)
-	at ✽.user login to the system successfully(file:///D:/NopCommerce/src/main/resources/Features/Login.feature:10)
-]]></failure>
-</testcase>
-<testcase classname="Login | User could log in with valid email and password" name="user could login with invalid email and password" time="8.057">
-<system-out><![CDATA[Given user go to login page.................................................passed
-When user login with "invalid"..............................................passed
-And user clicks on login button.............................................passed
-Then user could not login to the system.....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Register | users could register with new accounts" name="guest user could register with valid data successfully" time="9.38">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="121.312">
+<testcase classname="Register | users could register with new accounts" name="guest user could register with valid data successfully" time="10.174">
 <system-out><![CDATA[Given user go to register page..............................................passed
 When user select gender type................................................passed
 And user enter first name and last name.....................................passed
@@ -165,7 +13,80 @@ And user clicks on register button..........................................pass
 Then success message is displayed...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Reset Password | User could reset his/her password successfully" name="User could reset his/her password successfully" time="8.6">
+<testcase classname="Wishlist | Logged user could add different products to Wishlist" name="Logged user could add different products to Wishlist" time="9.09">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enter an existing email...........................................passed
+And user enter an valid password............................................passed
+And user clicks on login button.............................................passed
+And user hover "Computers" category.........................................passed
+And user click on sub-category..............................................passed
+And user clicks on "Add To Wishlist" button2................................passed
+And user clicks on "Add To Wishlist" button1................................passed
+Then add wishlist message is displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Compare List | Logged user could add different products to compare list" name="Logged user could add different products to compare list" time="9.41">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enter an existing email...........................................passed
+And user enter an valid password............................................passed
+And user clicks on login button.............................................passed
+And user hover "Computers" category.........................................passed
+And user click on sub-category..............................................passed
+And user clicks on compare list 1...........................................passed
+And user clicks on compare list 2...........................................passed
+Then compare message is displayed...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Order | Create successful Order" name="Create successful Order" time="27.313">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enter an existing email...........................................passed
+And user enter an valid password............................................passed
+And user clicks on login button.............................................passed
+And user hover "Computers" category.........................................passed
+And user click on sub-category..............................................passed
+And user clicks on "Add To Cart" button2....................................passed
+And user clicks on "Add To Cart" button1....................................passed
+And user hover "Shopping cart"..............................................passed
+And user clicks on "Go To Cart" button......................................passed
+And user check to agree the terms of service................................passed
+And user clicks on "Checkout" button........................................passed
+And user select the country.................................................passed
+And user enter the city.....................................................passed
+And user enter the address1.................................................passed
+And user enter zip..........................................................passed
+And user enter phone number.................................................passed
+And user clicks on "Continue" to shipping method............................passed
+And user clicks on "Next Day Air"...........................................passed
+And user clicks on "Continue" to payment method.............................passed
+And user clicks on "Credit Card" option.....................................passed
+And user clicks on "Continue" to payment info...............................passed
+And user select credit card type............................................passed
+And user enter cardholder name..............................................passed
+And user enter card number..................................................passed
+And user enter expiration month.............................................passed
+And user enter expiration year..............................................passed
+And user enter card code....................................................passed
+And user clicks on "Continue" to confirm order..............................passed
+And user clicks on "confirm" to final confirm order.........................passed
+Then Your order has been successfully processed!............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | User could log in with valid email and password" name="User could log in with valid email and password successfully" time="7.367">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enter an existing email...........................................passed
+And user enter an valid password............................................passed
+And user clicks on login button.............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login | User could log in with valid email and password" name="user could login with invalid email and password" time="7.616">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with "invalid"..............................................passed
+And user clicks on login button.............................................passed
+Then user could not login to the system.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Reset Password | User could reset his/her password successfully" name="User could reset his/her password successfully" time="7.519">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user clicks on forget password button..................................passed
 And user enter an existing email............................................passed
@@ -173,7 +94,7 @@ And user clicks on recover..................................................pass
 Then confirmation message is displayed......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search | Logged User could search for any product" name="Logged User could search for any product" time="8.167">
+<testcase classname="Search | Logged User could search for any product" name="Logged User could search for any product" time="8.145">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user enter an existing email...........................................passed
 And user enter an valid password............................................passed
@@ -184,7 +105,28 @@ And user clicks on search button............................................pass
 Then the product shows up...................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Tags | Logged user could select different tags" name="Logged user could select different tags" time="12.246">
+<testcase classname="Categories | Logged user could select different Categories" name="Logged user could select different Categories &amp; Sub-categories" time="8.096">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enter an existing email...........................................passed
+And user enter an valid password............................................passed
+And user clicks on login button.............................................passed
+And user hover "Computers" category.........................................passed
+And user click on sub-category..............................................passed
+Then page of sub-category name shows up.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter | Logged user could filter with color" name="Logged user could filter with color" time="8.314">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user enter an existing email...........................................passed
+And user enter an valid password............................................passed
+And user clicks on login button.............................................passed
+And user hover "Apparel" category...........................................passed
+And user click on sub-category "Shoes"......................................passed
+And user click on "Red" filter..............................................passed
+Then only Red shoes shows up................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Tags | Logged user could select different tags" name="Logged user could select different tags" time="9.547">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user enter an existing email...........................................passed
 And user enter an valid password............................................passed
@@ -195,16 +137,16 @@ And user clicks on "game" tag...............................................pass
 Then tags shows up..........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Wishlist | Logged user could add different products to Wishlist" name="Logged user could add different products to Wishlist" time="9.149">
+<testcase classname="Shopping Cart | Logged user could add different products to Shopping cart" name="Logged user could add different products to Shopping cart" time="8.497">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user enter an existing email...........................................passed
 And user enter an valid password............................................passed
 And user clicks on login button.............................................passed
 And user hover "Computers" category.........................................passed
 And user click on sub-category..............................................passed
-And user clicks on "Add To Wishlist" button2................................passed
-And user clicks on "Add To Wishlist" button1................................passed
-Then add wishlist message is displayed......................................passed
+And user clicks on "Add To Cart" button2....................................passed
+And user clicks on "Add To Cart" button1....................................passed
+Then add to cart message is displayed.......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
