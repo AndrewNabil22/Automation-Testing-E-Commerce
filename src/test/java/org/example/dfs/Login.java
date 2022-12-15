@@ -11,7 +11,6 @@ import org.testng.Assert;
 
 public class Login {
     LocatorLogin log = new LocatorLogin();
-    LocatorRegister register = new LocatorRegister();
 
     @Given("user go to login page")
     public void loginPage() {log.loginPage().click();}
@@ -19,17 +18,9 @@ public class Login {
     public void exEmail(){
             log.logEmail().sendKeys("andrewnabil41@gmail.com");
     }
-    @When("user clicks on forget password button")
-    public void forgetButn(){
-        log.forgetButton().click();
-    }
     @And("user enter an valid password")
     public void exPassword(){
             log.logPass().sendKeys("Andrew10Aa@");
-    }
-    @And("user clicks on recover")
-    public void recoverButn(){
-        log.recoveryButton().click();
     }
     @When("user login with \"invalid\"")
     public void invalidData(){
@@ -47,13 +38,9 @@ public class Login {
               System.out.println("Logged in Successfully");
     }
     @Then("user could not login to the system")
-    public void loginUnSuccessfully() throws InterruptedException {
+    public void loginUnSuccessfully() {
         log.logunSuc().isDisplayed();
         System.out.println("Login was unsuccessful.");
         System.out.println("the color of this message is red");
-    }
-    @Then("confirmation message is displayed")
-    public void confirmationMessage(){
-        Assert.assertTrue(Hooks.driver.findElement(By.xpath("//*[@id=\"bar-notification\"]/div/p")).isDisplayed());
     }
 }

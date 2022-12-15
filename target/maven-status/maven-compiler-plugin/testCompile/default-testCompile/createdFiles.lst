@@ -1,4 +1,4 @@
-org\example\dfs\Hooks.class
-org\example\testRun\Run.class
-org\example\pages\LocatorRegister.class
 org\example\dfs\regDfs.class
+org\example\testRun\Run.class
+org\example\dfs\Hooks.class
+org\example\pages\LocatorRegister.class
