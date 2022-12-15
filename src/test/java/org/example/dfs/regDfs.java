@@ -46,7 +46,7 @@ public class regDfs {
     }
     @And("user enter email field")
     public void email(){
-        reg.email().sendKeys("andrewnabil41@gmail.com");
+        reg.email().sendKeys("andrewnabil412@gmail.com");
     }
     @And("user fills Password fields")
     public void pass(){

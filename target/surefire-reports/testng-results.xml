@@ -1,225 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="12" passed="10">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="146499" started-at="2022-12-15T01:44:39 EET" finished-at="2022-12-15T01:47:05 EET">
+  <suite name="Surefire suite" duration-ms="125955" started-at="2022-12-15T02:47:05 EET" finished-at="2022-12-15T02:49:11 EET">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="146499" started-at="2022-12-15T01:44:39 EET" finished-at="2022-12-15T01:47:05 EET">
+    <test name="Surefire test" duration-ms="125955" started-at="2022-12-15T02:47:05 EET" finished-at="2022-12-15T02:49:11 EET">
       <class name="org.example.testRun.Run">
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="setUpClass" is-config="true" duration-ms="426" started-at="2022-12-15T01:44:39 EET" finished-at="2022-12-15T01:44:39 EET">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="setUpClass" is-config="true" duration-ms="391" started-at="2022-12-15T02:47:05 EET" finished-at="2022-12-15T02:47:06 EET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6f731759]]>
+                <![CDATA[org.testng.TestRunner@36224f93]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="11405" started-at="2022-12-15T01:44:39 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:44:51 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Logged user could add different products to Shopping cart"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Shopping Cart | Logged user could add different products to Shopping cart"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8286" started-at="2022-12-15T01:44:51 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:44:59 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Logged user could select different Categories & Sub-categories"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Categories | Logged user could select different Categories"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9308" started-at="2022-12-15T01:44:59 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:45:08 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Logged user could add different products to compare list"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Compare List | Logged user could add different products to compare list"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="30185" started-at="2022-12-15T01:45:08 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:45:38 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Create successful Order"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Create Order | Create successful Order"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ae998a53aed884fc26eabd7a3f18bc98, findElement {using=id, value=BillingNewAddress_CountryId}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59218}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59218/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae998a53aed884fc26eabd7a3f18bc98]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ae998a53aed884fc26eabd7a3f18bc98, findElement {using=id, value=BillingNewAddress_CountryId}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59218}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59218/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae998a53aed884fc26eabd7a3f18bc98
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.example.pages.LocatorCreateOrder.country(LocatorCreateOrder.java:27)
-at org.example.dfs.CreateOrder.slctCountry(CreateOrder.java:42)
-at ✽.user select the country(file:///D:/NopCommerce/src/main/resources/Features/CreateOrder.feature:17)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="12772" started-at="2022-12-15T01:45:38 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:45:51 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Logged user could filter with color"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Filter | Logged user could filter with color"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="18281" started-at="2022-12-15T01:45:51 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:46:09 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User could log in with valid email and password successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login | User could log in with valid email and password"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".ico\-logout"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [af3e3cb2ef491a72f76f09465030d8a1, findElement {using=class name, value=ico-logout}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59341}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: af3e3cb2ef491a72f76f09465030d8a1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ico\-logout"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [af3e3cb2ef491a72f76f09465030d8a1, findElement {using=class name, value=ico-logout}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59341}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: af3e3cb2ef491a72f76f09465030d8a1
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.example.pages.LocatorLogin.logSuc(LocatorLogin.java:30)
-at org.example.dfs.Login.loginSuccessfully(Login.java:36)
-at ✽.user login to the system successfully(file:///D:/NopCommerce/src/main/resources/Features/Login.feature:10)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8063" started-at="2022-12-15T01:46:09 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:46:18 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["user could login with invalid email and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login | User could log in with valid email and password"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9389" started-at="2022-12-15T01:46:18 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:46:27 EET">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9419" started-at="2022-12-15T02:47:06 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:47:15 EET">
           <params>
             <param index="0">
               <value>
@@ -235,55 +37,7 @@ at ✽.user login to the system successfully(file:///D:/NopCommerce/src/main/res
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8604" started-at="2022-12-15T01:46:27 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:46:36 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["User could reset his/her password successfully"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Reset Password | User could reset his/her password successfully"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8174" started-at="2022-12-15T01:46:36 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:46:44 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Logged User could search for any product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search | Logged User could search for any product"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="12264" started-at="2022-12-15T01:46:44 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:46:56 EET">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Logged user could select different tags"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Tags | Logged user could select different tags"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9154" started-at="2022-12-15T01:46:56 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T01:47:05 EET">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9522" started-at="2022-12-15T02:47:15 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:47:25 EET">
           <params>
             <param index="0">
               <value>
@@ -299,7 +53,167 @@ at ✽.user login to the system successfully(file:///D:/NopCommerce/src/main/res
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="tearDownClass" is-config="true" duration-ms="99" started-at="2022-12-15T01:47:05 EET" finished-at="2022-12-15T01:47:05 EET">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9606" started-at="2022-12-15T02:47:25 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:47:34 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could add different products to compare list"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Compare List | Logged user could add different products to compare list"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="27330" started-at="2022-12-15T02:47:34 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:01 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create successful Order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Order | Create successful Order"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="7409" started-at="2022-12-15T02:48:01 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:09 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User could log in with valid email and password successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login | User could log in with valid email and password"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8002" started-at="2022-12-15T02:48:09 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:17 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user could login with invalid email and password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login | User could log in with valid email and password"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="7607" started-at="2022-12-15T02:48:17 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:25 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User could reset his/her password successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Reset Password | User could reset his/her password successfully"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="7969" started-at="2022-12-15T02:48:25 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:32 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged User could search for any product"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search | Logged User could search for any product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8514" started-at="2022-12-15T02:48:32 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:41 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could select different Categories & Sub-categories"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Categories | Logged user could select different Categories"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="9494" started-at="2022-12-15T02:48:41 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:48:50 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could filter with color"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Filter | Logged user could filter with color"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="11532" started-at="2022-12-15T02:48:50 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:49:02 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could select different tags"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Tags | Logged user could select different tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="runScenario" duration-ms="8997" started-at="2022-12-15T02:49:02 EET" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-15T02:49:11 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logged user could add different products to Shopping cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping Cart | Logged user could add different products to Shopping cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.example.testRun.Run@36b4cef0]" name="tearDownClass" is-config="true" duration-ms="137" started-at="2022-12-15T02:49:11 EET" finished-at="2022-12-15T02:49:11 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

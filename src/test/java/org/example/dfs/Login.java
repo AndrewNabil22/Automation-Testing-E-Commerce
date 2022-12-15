@@ -16,7 +16,7 @@ public class Login {
     public void loginPage() {log.loginPage().click();}
     @When("user enter an existing email")
     public void exEmail(){
-            log.logEmail().sendKeys("andrewnabil41@gmail.com");
+            log.logEmail().sendKeys("andrewnabil412@gmail.com");
     }
     @And("user enter an valid password")
     public void exPassword(){

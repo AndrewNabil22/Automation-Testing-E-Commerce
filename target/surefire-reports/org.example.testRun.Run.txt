@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.example.testRun.Run
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 146.855 s <<< FAILURE! - in org.example.testRun.Run
-org.example.testRun.Run.runScenario  Time elapsed: 30.193 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [ae998a53aed884fc26eabd7a3f18bc98, findElement {using=id, value=BillingNewAddress_CountryId}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59218}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59218/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae998a53aed884fc26eabd7a3f18bc98
-
-org.example.testRun.Run.runScenario  Time elapsed: 18.282 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":".ico\-logout"}
-  (Session info: MicrosoftEdge=108.0.1462.46)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [af3e3cb2ef491a72f76f09465030d8a1, findElement {using=class name, value=ico-logout}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, ms:edgeOptions: {debuggerAddress: localhost:59341}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\andre\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59341/devtoo..., se:cdpVersion: 108.0.1462.46, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: af3e3cb2ef491a72f76f09465030d8a1
-
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 126.24 s - in org.example.testRun.Run
